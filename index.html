@@ -9,11 +9,11 @@
 <body>
     <header>
         <h1>Veterinaria</h1>
-    </theader>
+    </header>
     <menu>
-        <a href="Servicios veterinario">Servcios veterinario</a>
-        <a href="Galeria de mascotas">Galeria de mascotas</a>
-        <a href="Fomulario para turnos">Formulario para turnos</a>
+        <a href="#servicios">Servcios veterinario</a>
+        <a href="#Galeria">Galeria de mascotas</a>
+        <a href="#Formulario2">Formulario para turnos</a>
     </menu>
     <nav>
         <section id="servicios">
@@ -24,19 +24,28 @@
 
     <section id="Galeria">
         <h1>Galeria de mascotas </h1>
-    <section id="card">
-        <img src=""  alt="">
-    <h2>se muestra un animal feliz </h2>
-
-</section>
-
+    <div id="galeria">
+        <div class="card">
+            <img class="card-img" src="https://imgs.search.brave.com/pzQz9ytttAwCEfZYhLc6S7OrCKBNPgOGrSwxXR1Kxy4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/aGFwcHktcHVwcHkt/djAtbTI3aXZ1emlq/OGxmMS5wbmc_d2lk/dGg9NjQwJmNyb3A9/c21hcnQmYXV0bz13/ZWJwJnM9MzhkZjFk/ZTBlODEzNzAwNGYy/MDYyMzViMTAzY2M2/NDgwNTcxOWNiMg"  alt="Perrito Feliz">
+            <h2>se muestra un perrito feliz </h2>
+        </div>
+        <div class="card">
+            <img class="card-img" src="https://imgs.search.brave.com/6hmokP5tOxQomQ5IXF2IE_DStss72i4V0sRCmMkfnpg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9nYXRv/LWRlLWFuaXZlcnMl/QzMlQTFyaW8tY29t/LWNoYXAlQzMlQTl1/LWZlc3RhLWZlbGl6/LXF1ZS1pYS1nZXJv/dS00MDE3OTA1NjMu/anBn"  alt="Gatito Feliz">
+            <h2>se muestra un gatito feliz </h2>
+        </div>
+    </div>
     </section>
 
-    <section id="Formulario 2 ">
+    <section id="Formulario2">
 <h1>Formulario para turnos </h1>
-    <form action="Turno">
-    <label for="nombre">nombre:</label>
+    <form action="Turno" class="formulario">
+    <label for="nombre">Nombre:</label>
     <input type="text" id = "nombre" name="nombre" required>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id = "apellido" name="apellido" required>
+    <label for="dni">DNI:</label>
+    <input type="text" id = "dni" name="dni" required>
+    <button id="confirmar">Solicitar Turno</button>
 </form>
     </section></nav>
     
